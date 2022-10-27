@@ -21,7 +21,9 @@ class Language {
         // instanciate new Language object with spanish and call getInfo on it
         Language spanish = new Language("Spanish", 555000000, "Spain, Latin America, and Equatorial Guinea", "subject-verb-object");
         spanish.getInfo();
-
+        // instaciate new Langauge object with chontal and call getInfo on it
+        Mayan chontal = new Mayan("Chontal", 6000000);
+        chontal.getInfo();
 
     }
 }
