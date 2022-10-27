@@ -24,5 +24,10 @@ class Language {
         // instanciate new Langauge object with chontal and call getInfo on it
         Mayan chontal = new Mayan("Chontal", 6000000);
         chontal.getInfo();
+        // instanciate new Langauge object with Manderin Chinese and Burmese and call getInfo on it
+        SinoTibetan manderinChinese = new SinoTibetan("Manderin Chinese", 1000000);
+        manderinChinese.getInfo();
+        SinoTibetan burmese = new SinoTibetan("Burmese", 33000000);
+        burmese.getInfo();
     }
 }
