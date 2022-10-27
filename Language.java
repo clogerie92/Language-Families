@@ -31,14 +31,14 @@ class Language {
         manderinChinese.getInfo();
         SinoTibetan burmese = new SinoTibetan("Burmese", 33000000);
         // burmese.getInfo();
-
+        // ArrayList of languages
         ArrayList<Language> languages = new ArrayList<Language>();
-
+        // add each language to ArrayList
         languages.add(spanish);
         languages.add(chontal);
         languages.add(manderinChinese);
         languages.add(burmese);
-
+        // loop through ArrayList and call getInfo on each language
         for(Language language : languages)  {
           language.getInfo();
         }
