@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class Language {
   // protected fields
   protected String name;
@@ -20,14 +22,25 @@ class Language {
     public static void main(String[] args) {
         // instanciate new Language object with spanish and call getInfo on it
         Language spanish = new Language("Spanish", 555000000, "Spain, Latin America, and Equatorial Guinea", "subject-verb-object");
-        spanish.getInfo();
+        // spanish.getInfo();
         // instanciate new Langauge object with chontal and call getInfo on it
         Mayan chontal = new Mayan("Chontal", 6000000);
-        chontal.getInfo();
+        // chontal.getInfo();
         // instanciate new Langauge object with Manderin Chinese and Burmese and call getInfo on it
         SinoTibetan manderinChinese = new SinoTibetan("Manderin Chinese", 1000000);
         manderinChinese.getInfo();
         SinoTibetan burmese = new SinoTibetan("Burmese", 33000000);
-        burmese.getInfo();
+        // burmese.getInfo();
+
+        ArrayList<Language> languages = new ArrayList<Language>();
+
+        languages.add(spanish);
+        languages.add(chontal);
+        languages.add(manderinChinese);
+        languages.add(burmese);
+
+        for(Language language : languages)  {
+          language.getInfo();
+        }
     }
 }
