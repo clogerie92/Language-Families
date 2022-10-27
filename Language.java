@@ -4,6 +4,18 @@ class Language {
   protected int numSpeakers;
   protected String regionsSpoken;
   protected String wordOrder;
+  // Language constructor that sets each field to the value that was passed in  
+  Language(String langName, int speakers, String regions, String order) {
+    this.name = langName;
+    this.numSpeakers = speakers;
+    this.regionsSpoken = regions;
+    this.wordOrder = order;
+  }
+  // getInfo() to print language info to console
+  public void getInfo() {
+    System.out.println(this.name + "is spoken by " + this.numSpeakers + " people mainly in " + this.regionsSpoken + ".");
+    System.out.println("The language follows the word order: " + wordOrder);
+  }
   //main method
     public static void main(String[] args) {
 
