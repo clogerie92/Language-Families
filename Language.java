@@ -18,7 +18,10 @@ class Language {
   }
   //main method
     public static void main(String[] args) {
+        // instanciate new Language object with spanish and call getInfo on it
         Language spanish = new Language("Spanish", 555000000, "Spain, Latin America, and Equatorial Guinea", "subject-verb-object");
-    spanish.getInfo();
+        spanish.getInfo();
+
+
     }
 }
